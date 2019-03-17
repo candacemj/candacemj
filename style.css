@@ -1,0 +1,423 @@
+html {
+    overflow-x: hidden;   
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+header {
+    background-color: #212121;
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
+    padding-top: 80px;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: "The Darkthing Demo";
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Open Sans";
+    color: #bc2ce4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #848484;
+}
+
+a:hover {
+    color: #e3e419;
+}
+
+a:active {
+    color: #c70029;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    letter-spacing: 6px;
+    background-color: #e3e419;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    margin-top: -5px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: justify;
+    line-height: 22px;
+    font-weight: lighter;
+    color: #212121;
+}
+
+footer {
+    margin-bottom: 0;	
+}
+
+table {
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3 {
+    font-family: "Open Sans";
+    color: #848484;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Arial";
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 28px;
+    font-weight: lighter;
+}
+
+h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: #c70029;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+h6 {
+    font-family: "Arial";
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+ul {
+    font-family: "Arial";
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: -10px;
+    list-style-image: url('img/splat.png');
+}
+
+li {
+    padding-top: 20px;
+}
+
+blockquote {
+    background-color: #f5f5f5;
+    font-size: 14px;
+    padding: 10px;
+    color: #c70029;
+    text-transform: uppercase;
+}
+
+pre {
+    font-family: "Arial";
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: lighter;
+    color: #212121;
+    text-align: center;
+}
+
+#section1 {
+    background-color: #212121;
+    width: 100%;
+}
+
+#section2 {
+    background-color: #e6e6e6;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+hr {
+   border-top: 2px dotted #e3e419; 
+   margin-bottom: 0px;
+   border-bottom: 0px;
+   border-left: 0px;
+   border-right: 0px;
+}
+
+strike {
+    color: #ffffff;
+}
+
+ol {
+   display: none;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: #bc2ce4;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 100px;
+  border-radius: 0 3px 3px 0;
+
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 100px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption {
+  font-family: "Helvetica";
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #f2f2f2;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  letter-spacing: 6px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  color: #212121;
+  width: 800px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #e3e419;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 12px;
+  width: 800px;
+  background-color: #ffffff;
+  display: none;
+  overflow: hidden;
+  margin-top: -40px;
+  padding-bottom: 30px;
+}
+
+/* Make the container relative */
+.swap-on-hover {
+  position: relative;	
+  margin:  0 auto;
+  max-width: 400px;
+}
+
+/* Select the image and make it absolute to the container */
+.swap-on-hover img {
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out 0s; 
+}
+
+/* 
+	We set z-index to be higher than the back image, so it's alwyas on the front.
+
+We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+*/
+.swap-on-hover .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity .2s linear;
+  cursor: pointer;
+}
+
+/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+.swap-on-hover:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+
+.swap-on-hover:hover > .swap-on-hover__back-image2 {
+    transform: rotate(10deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.swap-on-hover:hover > .swap-on-hover__back-image3 {
+    transform: rotate(-10deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #bc2ce4;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0.5;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.mySlides {
+    display:none;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 800px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*w3 stylesheet*/
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+
